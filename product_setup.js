@@ -27,3 +27,21 @@ let isPriceOver50 = price > 50;
 
 console.log(`Is the price over 50? ${isPriceOver50}`);
 
+let eligibleForStandardListing = (stockQuantity > 0) && (!isOnSale);
+console.log(`Eligible for standard listing? ${eligibleForStandardListing}`);
+
+let isStockExactly50 = stockQuantity === "50";
+console.log (`Is stock exactly 50? ${isStockExactly50}`);
+
+let isStockLoosely50 = stockQuantity == "50";
+console.log (`Is stock loosely 50? ${isStockLoosely50}`);
+
+let productSummary = `
+--- Product Summary ---
+Product Name: ${productName}
+Category: ${productCategory}
+Price: ${price}
+Stock: ${stockQuantity} units available
+------------------------
+`;
+console.log(productSummary);
