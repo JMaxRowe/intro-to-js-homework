@@ -16,3 +16,14 @@ console.log(`Is On Sale data type: ${typeof isOnSale}`);
 console.log(`Main Feature data type: ${typeof mainFeature}`);
 console.log(`Discount Code data type: ${typeof discountCode} (Remember the quirk!)`);
 
+let totalStockValue = stockQuantity * price;
+
+console.log(`Total stock value: $ ${totalStockValue}`);
+
+stockQuantity -= 5;
+console.log(`Updated stock quantity: ${stockQuantity}`);
+
+let isPriceOver50 = price > 50;
+
+console.log(`Is the price over 50? ${isPriceOver50}`);
+
